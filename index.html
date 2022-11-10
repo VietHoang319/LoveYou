@@ -6,6 +6,10 @@
     <META NAME="Author" CONTENT="">
     <META NAME="Keywords" CONTENT="">
     <META NAME="Description" CONTENT="">
+<!--    Link font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <style>
         html, body {
             height: 100%;
@@ -44,7 +48,7 @@
         title: "Love you forever",
         color: "rgb(215,215,215)",
         size: "30px",
-        font: "Comic Sans MS",
+        font: "Dancing Script",
     };
 
     let image1 = {
@@ -273,7 +277,7 @@
             // clear canvas
             context.clearRect(0, 0, canvas.width, canvas.height);
             context.textAlign = "center"
-            context.font = `${text.size} ${text.font}`
+            context.font = `italic bold ${text.size} ${text.font}`
             context.fillStyle = text.color;
             context.fillText(`${text.title}`, canvas.width/2, canvas.height/2.2);
             // create new particles
